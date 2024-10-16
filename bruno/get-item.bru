@@ -1,0 +1,18 @@
+meta {
+  name: get-item
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8000/api/items/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 3,
+    "name": "hello"
+  }
+}
